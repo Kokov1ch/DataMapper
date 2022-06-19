@@ -4,7 +4,7 @@ use PDO;
 class PersonDataMapper{
     private PDO $db;
     public function __construct(){
-        $this->db=new PDO('mysql:host=localhost:3306;dbname=city', 'root', 'dfdb7kjy3000');
+        $this->db=new PDO('mysql:host=localhost:3306;dbname=city', 'root', '***********');
     }
     public function getAll(){
         $query = 'SELECT * from person';
