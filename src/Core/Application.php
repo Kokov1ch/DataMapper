@@ -8,7 +8,7 @@ class Application{
     private Controller\mainController $controller;
     private Repository\PersonRepository $repository;
     public function __construct(){
-        $loader = new FilesystemLoader(dirname(__DIR__,1) . '/View/');
+        $loader = new FilesystemLoader(dirname(__DIR__) . '/View/');
         $twig = new Environment($loader);
         $this->controller = new Controller\MainController($twig);
         $this->repository = new Repository\PersonRepository();
